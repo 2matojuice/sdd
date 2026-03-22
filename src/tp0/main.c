@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdio.h> // printf; scanf; etc.
+#include <stdlib.h> // malloc; free; calloc ...
+#include <string.h> // strcpy; strlen;  ...
 
 /*
  * --- STRUCTURES ---
@@ -119,16 +119,40 @@ void double_pointers_demo() {
     free(array);
 }
 
+void my_function() {
+    char* str = "Hello World";
+    char * str2 = str;
+    free(str);
+    printf("%s\n", str2);
+
+}
+
+void my_fucntion() {
+    char* str = (char*)malloc(sizeof(char)*100);
+
+    *str = 'H';
+    *(str + 1) = "e";
+    str[2] = 'l';
+    str[3] = 'l';
+    str[4] = 'o';
+    str[5] =' ';
+
+    char* str2 = str+6;
+    *str2 = 'W';
+    
+    //strcpy(str, "Hello Wolrd");
+
+    int size = strlen(str);
+    printf("%s (length is %d)\n", str, size);
+    free(str);
+}
+
 int main(int argc, char **argv) {
-    conditions_loops_demo();
-    strings_demo();
-    pointers_malloc_demo();
-    structures_demo();
-    double_pointers_demo();
-
-    printf("\n--- Stack Trace Demo ---\n");
-    first_step(10);
-
+    
+    int x = 3;
+    my_function(x);
+    
+    printf("%d\n", x);
     return 0;
 }
 

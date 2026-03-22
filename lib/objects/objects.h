@@ -5,19 +5,28 @@ typedef struct car Car;
 typedef struct customer Customer;
 typedef struct registry Registry;
 
-struct car
-{
-    // TODO: Implement
+struct car{
+
+char* brand;
+char* model;
+char* license;
+Customer* customer;
+
 };
 
-struct customer
-{
-    // TODO: Implement
+struct customer{
+
+    char* name;
+    char* address;
+    Car* car;
+
 };
 
-struct registry
-{
-    // TODO: Implement
+struct registry{
+
+    Customer** customers;
+    int size;
+
 };
 
 Car *car_create(char *brand, char *model, char *license);
