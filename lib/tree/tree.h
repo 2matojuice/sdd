@@ -5,14 +5,17 @@
 #include "./../queue/queue.h"
 #include "./../stack/stack.h"
 
-typedef struct treeNode
-{
-    // TODO: Implement
+typedef struct treeNode{
+    void *data;
+    struct treeNode *left;
+    struct treeNode *right;
+
 } TreeNode;
 
-typedef struct tree
-{
-    // TODO: Implement
+typedef struct tree{
+    int size;
+    struct treeNode *root;
+    
 } Tree;
 
 Tree *tree_create();

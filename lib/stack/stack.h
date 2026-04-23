@@ -3,12 +3,15 @@
 
 typedef struct stackNode
 {
-    // TODO: Implement
+    void *data;
+    void stackNode next*;
 } StackNode;
 
 typedef struct stack
 {
-    // TODO: Implement
+    stackNode *head;
+    stackNode *tail;
+    int size;
 } Stack;
 
 Stack *stack_create();

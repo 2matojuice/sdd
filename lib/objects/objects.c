@@ -11,7 +11,6 @@ Car *car_create(char *brand, char *model, char *license){
     p -> license = license;
 
     return p;
-
 }
 
 Customer *customer_create(char *name, char *address){
@@ -21,7 +20,6 @@ Customer *customer_create(char *name, char *address){
     p -> address = address;
 
     return p;
-
 }
 
 Registry *registry_create(Customer **customers, int size){
@@ -31,7 +29,6 @@ Registry *registry_create(Customer **customers, int size){
     p->size = size;
 
     return p;
-
 }
 
 void car_destroy(Car *car){
