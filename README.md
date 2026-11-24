@@ -66,7 +66,7 @@ Do the following steps to run tp0:
 ### Git and tests
 We are going to create a **GitHub** repository. To do so, make sure you have a GitHub account that uses your institutional email address (@etu.unige.ch). We strongly recommend getting GitHub Pro for free through your institutional e-mail at this link: [https://education.github.com/pack](https://education.github.com/pack). 
 
-1) Go to your personal [github](https://github.com) and create a new repository called `sdd`. 
+1) Go to your personal [github](https://github.com) and create a new repository called `sdd`.
 2) Inside the `sdd` directory, run the following commands to set-up the git repos (only once):
 ```bash
 git init # Initializes the git repo
